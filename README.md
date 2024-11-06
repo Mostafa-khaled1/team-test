@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init({
+  once: false,  // تأكد من أن الأنيميشن يحدث أكثر من مرة عند التمرير
+  offset: 100,  // مسافة التفعيل قبل الوصول إلى العنصر
+  duration: 600,  // مدة الأنيميشن
+  easing: 'ease-in-out',  // نوع التأثير
+});
